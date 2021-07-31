@@ -19,8 +19,8 @@ const Sort = () => {
       </ul>
       <br />
       <h4>
-        View the source code{' '}
-        <a href='https://github.com/ssas-project/algovis' target='_blank'>
+        View the source code
+        <a href='https://github.com/ssas-project/algovis' rel='noreferrer' target='_blank'>
           here
         </a>
       </h4>
