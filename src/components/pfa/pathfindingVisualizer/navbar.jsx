@@ -1,7 +1,12 @@
 import React, { Component } from "react";
+import { MenuItem, FormControl, InputLabel, Select, Button } from "@material-ui/core";
 import "./navbar.css";
+// import useStyles from '../../styles'
+
+// const classes = useStyles()
 
 class NavBar extends Component {
+
   state = {
     algorithm: "Visualize Algorithm",
     maze: "Generate Maze",
@@ -142,150 +147,45 @@ class NavBar extends Component {
 
   render() {
     return (
-      <nav className="navbar navbar-expand nv">
-        <div className="navbar-collapse" id="navbarNavDropdown">
-          <ul className="navbar-nav">
-            <li className="nav-item dropdown">
-              <div className="dropdown">
-                <button
-                  className="btn btn-light dropdown-toggle"
-                  type="button"
-                  id="dropdownMenu1"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Algorithms
-                </button>
-                <div className="dropdown-menu" aria-labelledby="dropdownMenu1">
-                  <button
-                    className="dropdown-item btn-light"
-                    type="button"
-                    onClick={() => this.selectAlgorithm("Visualize Dijkstra")}
-                  >
-                    Dijkstra's Algorithm
-                  </button>
-                  <button
-                    className="dropdown-item btn-light"
-                    type="button"
-                    onClick={() => this.selectAlgorithm("Visualize A*")}
-                  >
-                    A* Algorithm
-                  </button>
-                  <button
-                    className="dropdown-item btn-light"
-                    type="button"
-                    onClick={() => this.selectAlgorithm("Visualize Greedy BFS")}
-                  >
-                    Greedy Best First Search
-                  </button>
-                  <button
-                    className="dropdown-item btn-light"
-                    type="button"
-                    onClick={() =>
-                      this.selectAlgorithm("Visualize Bidirectional Greedy")
-                    }
-                  >
-                    Bidirectional Greedy Search
-                  </button>
-                  <div className="dropdown-divider"></div>
-                  <button
-                    className="dropdown-item btn-light"
-                    type="button"
-                    onClick={() =>
-                      this.selectAlgorithm("Visualize Breadth First Search")
-                    }
-                  >
-                    Breadth First Search
-                  </button>
-                  <button
-                    className="dropdown-item btn-light"
-                    type="button"
-                    onClick={() =>
-                      this.selectAlgorithm("Visualize Depth First Search")
-                    }
-                  >
-                    Depth First Search
-                  </button>
-                  <button
-                    className="dropdown-item btn-light"
-                    type="button"
-                    onClick={() =>
-                      this.selectAlgorithm("Visualize Random Walk")
-                    }
-                  >
-                    Random Walk
-                  </button>
-                </div>
-              </div>{" "}
-            </li>
-            <li>
-              <button
-                type="button"
-                className="btn btn-success"
-                onClick={() => this.visualizeAlgorithm()}
-              >
-                {this.state.algorithm}
-              </button>
-            </li>
-            <li>
-              <button
-                className="btn btn-primary"
-                type="button"
-                onClick={() => this.props.generateRandomMaze()}
-              >
-                Random Maze
-              </button>
-            </li>
+      <nav className="nv">
+           <FormControl variant='filled' className='slt'>
+              <InputLabel id='compType1'>Select path finding Algortihm</InputLabel>
+              <Select labelId='compType1' id='compType1' value={this.selection} onChange={(e) => this.selectAlgorithm(e.target.value)}>
+                <MenuItem value={"Visualize Dijkstra"}>Dijkstra's Algorithm</MenuItem>
+                <MenuItem value={"Visualize A*"}>A* Algorithm</MenuItem>
+                <MenuItem value={"Visualize Greedy BFS"}>Greedy Best First Search</MenuItem>
+                <MenuItem value={"Visualize Bidirectional Greedy"}> Bidirectional Greedy Search</MenuItem>
+                <hr />                
+                <MenuItem value={"Visualize Breadth First Search"}>Breadth First Search</MenuItem>
+                <MenuItem value={"Visualize Depth First Search"}>Depth First Search</MenuItem>
+                <MenuItem value={"Visualize Random Walk"}>Random Walk</MenuItem>
+              </Select>
+            </FormControl>
+              
+            <Button variant='contained' className='btnC' onClick={() => this.visualizeAlgorithm()}>
+              {this.state.algorithm}
+            </Button>
 
-            <li>
-              <button
-                type="button"
-                className="btn btn-danger"
-                onClick={() => this.clearGrid()}
-              >
-                Clear Gird
-              </button>
-            </li>
-            <li className="nav-item dropdown">
-              <div className="dropdown">
-                <button
-                  className="btn btn-info dropdown-toggle"
-                  type="button"
-                  id="dropdownMenu1"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  {this.state.speedState}
-                </button>
-                <div className="dropdown-menu" aria-labelledby="dropdownMenu1">
-                  <button
-                    className="dropdown-item btn-light"
-                    type="button"
-                    onClick={() => this.changeSpeed("Slow")}
-                  >
-                    Slow
-                  </button>
-                  <button
-                    className="dropdown-item btn-light"
-                    type="button"
-                    onClick={() => this.changeSpeed("Medium")}
-                  >
-                    Medium
-                  </button>
-                  <button
-                    className="dropdown-item btn-light"
-                    type="button"
-                    onClick={() => this.changeSpeed("Fast")}
-                  >
-                    Fast
-                  </button>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
+            <Button variant='contained' className='btnC' onClick={() => this.props.generateRandomMaze()}>
+              Random Maze
+            </Button>
+          
+            <Button variant='contained' className='btnC' onClick={() => this.clearGrid()}>
+              Clear Grid
+            </Button>
+
+            <Button variant='contained' id='dropdownMenu1' className='btnC' color='primary'>
+              {this.state.speedState}
+            </Button>
+
+            <FormControl variant='filled' className='slt1'>
+              <InputLabel id='compType1'>Speed</InputLabel>
+                <Select labelId='speed' id='speed' value={this.speed} onChange={(e) => this.changeSpeed(e.target.value)}>
+                  <MenuItem value={"Slow"}>Slow</MenuItem>
+                  <MenuItem value={"Medium"}>Medium</MenuItem>
+                  <MenuItem value={"Fast"}>Fast</MenuItem>
+                </Select>
+            </FormControl>
       </nav>
     );
   }

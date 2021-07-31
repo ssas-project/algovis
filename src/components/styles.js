@@ -149,6 +149,16 @@ const useStyles = makeStyles((theme) => ({
     padding: '5rem',
     margin: '5rem',
   },
+
+  home: {
+    margin: '5rem auto',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    color: 'white',
+    fontSize: '1.2rem',
+  },
 }))
 
 export default useStyles
