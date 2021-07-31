@@ -11,9 +11,6 @@ import SortR from './pages/SortRandom'
 import Compare from './pages/Compare'
 import Lex from './pages/Lex'
 import Pfa from './pages/Pfa'
-// import Trav from './Pages/Tsm'
-// import Tree from './Pages/Tree'
-// import Tsp from './Pages/Tsp'
 
 const App = () => {
   return (
@@ -42,13 +39,6 @@ const App = () => {
         <Route exact path='/pfa'>
           <Pfa />
         </Route>
-        {/* 
-        <Route exact path='/tree'>
-          <Tree />
-        </Route>
-        <Route exact path='/tsp'>
-          <Trav />
-        </Route> */}
         <Route path='*'>
           <Error />
         </Route>
