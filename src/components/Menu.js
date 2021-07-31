@@ -18,12 +18,15 @@ const Menu = () => {
           <BarChart />
         </IconButton>
         <Typography variant='h5' className={classes.logo}>
-          <NavLink to='/'>AlgoVis</NavLink>
+          <NavLink to='/' className={classes.lnk}>
+            AlgoVis
+          </NavLink>
         </Typography>
 
         <NavLink to='/sortR' className={classes.lnk}>
           <Button color='inherit'>Sort Random</Button>
         </NavLink>
+
         <NavLink to='/sortI' className={classes.lnk}>
           <Button color='inherit'>Sort Input</Button>
         </NavLink>

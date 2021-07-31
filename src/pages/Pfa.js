@@ -4,9 +4,6 @@ import Side from '../components/tspLex/Side'
 import PathfindingVisualizer from '../components/pfa/pathfindingVisualizer/pathfindingVisualizer'
 import useStyles from '../components/styles'
 
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap/js/dist/dropdown'
-
 const Pfa = () => {
   const classes = useStyles()
   return (

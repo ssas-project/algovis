@@ -4,22 +4,32 @@ import useStyles from '../components/styles'
 const Sort = () => {
   const classes = useStyles()
   return (
-    <div className={`${classes.main} ${classes.paper}`}>
-      {/* <Grid container className={classes.main} alignItems='stretch'> */}
-      {/* <Tabs /> */}
-      <h2>AlgoVis</h2>
-      <h3>Some algorithms visualized using React and P5.js</h3>
-
-      <div>This is a project done by group SSAS, students of Purwanchal Campus, Dharan a branch of IOE, TU</div>
+    <div className={`${classes.home}`}>
+      <h2>AlgoVis: Algorithms visualized using React and P5.js</h2>
+      <hr />
+      <br />
+      <div>This is a project done by BCT-074 group SSAS, students of Purwanchal Campus</div>
+      <br />
       <h4>Group Members</h4>
       <ul>
         <li>Abdullah Waqar</li>
         <li>Sandesh Chudal</li>
         <li>Sarthak Parajuli</li>
-        <li>Shrijan Chaudhary</li>
+        <li>Srijan Chaudhary</li>
       </ul>
-      <h5>Cards 1 to 5</h5>
-      {/* </Grid> */}
+      <br />
+      <h4>
+        View the source code{' '}
+        <a href='https://github.com/ssas-project/algovis' target='_blank'>
+          here
+        </a>
+      </h4>
+      <br />
+      <h5>Contents</h5>
+      <div>Sort</div>
+      <div>Compare</div>
+      <div>TSP</div>
+      <div>Graph Traversal</div>
     </div>
   )
 }
