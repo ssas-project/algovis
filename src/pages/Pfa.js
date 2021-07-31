@@ -1,8 +1,11 @@
 import React from 'react'
 import { Grid } from '@material-ui/core'
-import Tsm from '../components/tspLex/Tsm'
 import Side from '../components/tspLex/Side'
+import PathfindingVisualizer from '../components/pfa/pathfindingVisualizer/pathfindingVisualizer'
 import useStyles from '../components/styles'
+
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/js/dist/dropdown'
 
 const Pfa = () => {
   const classes = useStyles()
@@ -13,7 +16,7 @@ const Pfa = () => {
       </Grid>
 
       <Grid item xs={12} md={9}>
-        <Tsm />
+        <PathfindingVisualizer />
       </Grid>
     </Grid>
   )

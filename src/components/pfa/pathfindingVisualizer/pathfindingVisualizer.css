@@ -1,0 +1,15 @@
+.grid-contain {
+  margin: 25px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.grid {
+  font-size: 0;
+  pointer-events: unset;
+}
+
+.grid-visualizing {
+  font-size: 0;
+  pointer-events: none;
+}
