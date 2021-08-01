@@ -23,10 +23,14 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: 'none',
     borderRadius: '4px',
     '&:hover': {
-      backgroundColor: 'rgb(140, 190, 9)',
+      backgroundColor: 'rgba(140, 190, 90, 0.5) !important',
     },
   },
-
+  menuButton: {
+    '&:hover': {
+      transform: 'rotate(-20deg) scale(1.2)',
+    },
+  },
   //ater nav
   paper: {
     height: '90vh',
@@ -158,6 +162,26 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     color: 'white',
     fontSize: '1.2rem',
+  },
+
+  cardC: {
+    display: 'flex',
+    fontSize: '1.5rem',
+  },
+  card: {
+    display: 'flex',
+    alignItems: 'center',
+    borderRadius: '0.3rem',
+    justifyContent: 'center',
+    height: '5rem',
+    width: '15rem',
+    margin: '0.5rem 2rem',
+    backgroundColor: 'rgba(0, 0, 0, 0.7)',
+  },
+  a: {
+    fontSize: '1.8rem',
+    color: 'white',
+    textDecoration: 'none',
   },
 }))
 

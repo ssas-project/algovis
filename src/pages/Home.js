@@ -4,7 +4,7 @@ import useStyles from '../components/styles'
 const Sort = () => {
   const classes = useStyles()
   return (
-    <div className={`${classes.home}`}>
+    <div className={classes.home}>
       <h2>AlgoVis: Algorithms visualized using React and P5.js</h2>
       <hr />
       <br />
@@ -25,11 +25,30 @@ const Sort = () => {
         </a>
       </h4>
       <br />
-      <h5>Contents</h5>
-      <div>Sort</div>
-      <div>Compare</div>
-      <div>TSP</div>
-      <div>Graph Traversal</div>
+
+      <h2>Contents</h2>
+      <div className={classes.cardC}>
+        <div className={classes.card}>
+          <a href='/sorti' className={classes.a}>
+            Sort
+          </a>
+        </div>
+        <div className={classes.card}>
+          <a href='/compare' className={classes.a}>
+            Compare
+          </a>
+        </div>
+        <div className={classes.card}>
+          <a href='/lex' className={classes.a}>
+            TSP
+          </a>
+        </div>
+        <div className={classes.card}>
+          <a href='/pfa' className={classes.a}>
+            Graph Traversal
+          </a>
+        </div>
+      </div>
     </div>
   )
 }
