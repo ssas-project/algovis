@@ -91,9 +91,10 @@ const Wrap = ({ type }) => {
           <Typography variant='h6' className={classes.info}>
             Number of swaps: {swaps}
           </Typography>
-          <Typography variant='h6' className={classes.info}>
+          {/* <Typography variant='h6' className={classes.info}>
             Time to sort: {time}
-          </Typography>
+          </Typography> */}
+          {console.log(time)}
         </Paper>
       </Grid>
     </Grid>

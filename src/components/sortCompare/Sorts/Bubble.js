@@ -23,8 +23,8 @@ export const Bubble = ({ arr, width, height, size, speed }) => {
   }
 
   const bubble = async (arr) => {
-    for (let i = 0; i < arr.length; i++) {
-      for (let j = 0; j < arr.length - 1; j++) {
+    for (let i = 0; i < arr.length - 1; i++) {
+      for (let j = 0; j < arr.length - i - 1; j++) {
         clr[j] = 0
         clr[j + 1] = 1
         if (arr[j] > arr[j + 1]) swap(arr, j, j + 1)

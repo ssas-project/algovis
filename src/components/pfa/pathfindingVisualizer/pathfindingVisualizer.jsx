@@ -431,8 +431,8 @@ class PathfindingVisualizer extends Component {
           clearPath={this.clearPath.bind(this)}
           updateSpeed={this.updateSpeed.bind(this)}
         />
-        <div className='grid-contain'>
 
+        <div className='grid-contain'>
         <div
           className={
             this.state.visualizingAlgorithm || this.state.generatingMaze
@@ -476,10 +476,9 @@ class PathfindingVisualizer extends Component {
                   );
                 })}
               </div>
-
-);
-})}
-</div>
+              );
+           })}
+          </div>
         </div>
       </React.Fragment>
     );

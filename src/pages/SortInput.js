@@ -2,7 +2,7 @@ import React from 'react'
 import Grid from '@material-ui/core/Grid'
 
 import Tabs from '../components/sortInput/Tabs'
-import Side from '../components/Side'
+import Side from '../components/sortInput/Side'
 import useStyles from '../components/styles'
 
 const Sort = () => {

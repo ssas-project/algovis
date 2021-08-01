@@ -8,6 +8,13 @@ import { Bubble, Insertion, Selection, Quick, Merge } from './Sorts'
 
 let arr = []
 
+const width = 500
+const height = 500
+const arrayS = 50
+const size = 10
+const speed = 10
+// const width
+
 const Compare = () => {
   const classes = useStyles()
 
@@ -20,7 +27,7 @@ const Compare = () => {
   const compare = () => setController((state) => !state)
 
   const gen = () => {
-    for (let i = 0; i < 250; i++) arr[i] = Math.ceil(Math.random() * 500)
+    for (let i = 0; i < arrayS; i++) arr[i] = Math.ceil(Math.random() * 500)
   }
 
   useEffect(() => {
@@ -45,15 +52,15 @@ const Compare = () => {
             {controller && (
               <article>
                 {cmp1 === 0 ? (
-                  <Bubble width={500} height={500} size={2} arr={arr} speed={10} />
+                  <Bubble width={width} height={height} size={size} arr={arr} speed={speed} />
                 ) : cmp1 === 1 ? (
-                  <Insertion width={500} height={500} size={2} arr={arr} speed={10} />
+                  <Insertion width={width} height={height} size={size} arr={arr} speed={speed} />
                 ) : cmp1 === 2 ? (
-                  <Selection width={500} height={500} size={2} arr={arr} speed={10} />
+                  <Selection width={width} height={height} size={size} arr={arr} speed={speed} />
                 ) : cmp1 === 3 ? (
-                  <Quick width={500} height={500} size={2} arr={arr} speed={10} />
+                  <Quick width={width} height={height} size={size} arr={arr} speed={speed * 2} />
                 ) : (
-                  <Merge width={500} height={500} size={2} arr={arr} speed={10} />
+                  <Merge width={width} height={height} size={size} arr={arr} speed={speed * 2} />
                 )}
               </article>
             )}
@@ -63,15 +70,15 @@ const Compare = () => {
             {controller && (
               <article>
                 {cmp2 === 0 ? (
-                  <Bubble width={500} height={500} size={2} arr={arr} speed={10} />
+                  <Bubble width={width} height={height} size={size} arr={arr} speed={speed} />
                 ) : cmp2 === 1 ? (
-                  <Insertion width={500} height={500} size={2} arr={arr} speed={10} />
+                  <Insertion width={width} height={height} size={size} arr={arr} speed={speed} />
                 ) : cmp2 === 2 ? (
-                  <Selection width={500} height={500} size={2} arr={arr} speed={10} />
+                  <Selection width={width} height={height} size={size} arr={arr} speed={speed} />
                 ) : cmp2 === 3 ? (
-                  <Quick width={500} height={500} size={2} arr={arr} speed={10} />
+                  <Quick width={width} height={height} size={size} arr={arr} speed={speed * 2} />
                 ) : (
-                  <Merge width={500} height={500} size={2} arr={arr} speed={10} />
+                  <Merge width={width} height={height} size={size} arr={arr} speed={speed * 2} />
                 )}
               </article>
             )}

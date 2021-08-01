@@ -4,7 +4,7 @@
 
 .btnC {
   margin: 8px !important;
-  color: whitesmoke;
+  color: whitesmoke !important;
   background-color: rgb(27, 112, 49) !important;
   padding: 7px;
   font-size: 0.8rem;

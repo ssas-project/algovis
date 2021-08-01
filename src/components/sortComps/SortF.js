@@ -74,7 +74,7 @@ const Sort = ({ width, speed, type, arr, setCompp, setSwapps, setTime }) => {
 
   const bubble = async (arr) => {
     for (let i = 0; i < arr.length - 1; i++) {
-      for (let j = 0; j < arr.length; j++) {
+      for (let j = 0; j < arr.length - i - 1; j++) {
         incComp()
         clr[j] = 0
         clr[j + 1] = 1

@@ -2,7 +2,7 @@ import React from 'react'
 import Paper from '@material-ui/core/Paper'
 import Typography from '@material-ui/core/Typography'
 
-import useStyles from './styles'
+import useStyles from '../styles'
 
 const Side = () => {
   const classes = useStyles()
@@ -10,36 +10,27 @@ const Side = () => {
   return (
     <Paper className={`${classes.paper} ${classes.side}`}>
       <Typography variant='h6' className={classes.title}>
-        Sorting algorithms visualized
+        Sorting algorithms comparision
       </Typography>
-
-      <Typography>
-        <b>Tools used</b>: <strong>React</strong> and <strong>p5.js</strong> library
-      </Typography>
-      <Typography>
-        <b>How it works: </b>
-      </Typography>
-      <Typography>Pick a sorting alorithm to visualize</Typography>
-      <Typography>Select array size</Typography>
-      <Typography>Then pick the delay between swaps.</Typography>
-      <Typography>
-        <i>Tip: Lower delay gives Faster sorting</i>
-      </Typography>
-      <Typography>
-        Click <b>Sort</b> button to start to visualize.
-      </Typography>
-      <Typography>
-        Press <b>Stop</b> if you want to change some parameters
-      </Typography>
-      <hr />
 
       <Typography>
         Sorting algorithms are algorithm that puts elements of a list in a certain order(ascending or descending).
       </Typography>
+
       <Typography>
-        The most frequently used orders are <b>numerical</b> order (0, 1, 2 ...) and <b>lexicographical</b> order(a, aa,
-        ab ...)
+        <b>Tools used</b>: <strong>React</strong> and <strong>p5.js</strong> library
+        <b>How it works: </b>
       </Typography>
+      <Typography>Select first sorting alorithm from list to visualize</Typography>
+      <Typography>Select the second sorting alorithm</Typography>
+      <Typography>
+        Click <b>Compare</b> button to start to visualize.
+      </Typography>
+      <Typography>
+        Press <b>Stop</b> if you want to change some parameters
+      </Typography>
+
+      <Typography>Here we have compared 2 sorting algos to see which performs faster</Typography>
       <hr />
       <Typography>
         Sorting efficiency is an important metric for optimizing the efficiency and optimum utilization of resources
@@ -52,8 +43,7 @@ const Side = () => {
       </Typography>
       <hr />
       <Typography>
-        In this project we have visualized the working of few popular comparision based algorithms as challenge to grasp
-        on basic concepts and internal working mechanisms.
+        <b>Algorithms used</b>
       </Typography>
       <ul>
         <b>Swap:</b> Bubble, Insertion and Selection
@@ -65,7 +55,6 @@ const Side = () => {
         <b>Divide and Conquer:</b> Quick sort
       </ul>
       <hr />
-
       <Typography className={classes.footer}>&#169;2021 All rights reserved</Typography>
       <br />
     </Paper>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Grid } from '@material-ui/core'
 import Comp from '../components/sortCompare/Compare'
-import Side from '../components/Side'
+import Side from '../components/sortCompare/Side'
 import useStyles from '../components/styles'
 
 const Compare = () => {

@@ -158,7 +158,7 @@ class NavBar extends Component {
                 <hr />                
                 <MenuItem value={"Visualize Breadth First Search"}>Breadth First Search</MenuItem>
                 <MenuItem value={"Visualize Depth First Search"}>Depth First Search</MenuItem>
-                <MenuItem value={"Visualize Random Walk"}>Random Walk</MenuItem>
+                {/* <MenuItem value={"Visualize Random Walk"}>Random Walk</MenuItem> */}
               </Select>
             </FormControl>
               

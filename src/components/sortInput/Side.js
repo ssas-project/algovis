@@ -2,7 +2,7 @@ import React from 'react'
 import Paper from '@material-ui/core/Paper'
 import Typography from '@material-ui/core/Typography'
 
-import useStyles from './styles'
+import useStyles from '../styles'
 
 const Side = () => {
   const classes = useStyles()
@@ -20,10 +20,9 @@ const Side = () => {
         <b>How it works: </b>
       </Typography>
       <Typography>Pick a sorting alorithm to visualize</Typography>
-      <Typography>Select array size</Typography>
-      <Typography>Then pick the delay between swaps.</Typography>
+      <Typography>Input numbers you want to visualize between 1 and 20 with spaces in between</Typography>
       <Typography>
-        <i>Tip: Lower delay gives Faster sorting</i>
+        <i>Careful: Dont put double ' ' space charachters</i>
       </Typography>
       <Typography>
         Click <b>Sort</b> button to start to visualize.

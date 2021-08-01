@@ -1,6 +1,6 @@
 import React from 'react'
 import { Grid } from '@material-ui/core'
-import Side from '../components/tspLex/Side'
+import Side from '../components/pfa/Side'
 import PathfindingVisualizer from '../components/pfa/pathfindingVisualizer/pathfindingVisualizer'
 import useStyles from '../components/styles'
 

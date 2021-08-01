@@ -5,7 +5,7 @@ import Menu from './components/Menu'
 //import Pages
 import Home from './pages/Home'
 import Error from './pages/Error'
-
+// specific componnent pages
 import SortI from './pages/SortInput'
 import SortR from './pages/SortRandom'
 import Compare from './pages/Compare'
@@ -36,9 +36,11 @@ const App = () => {
         <Route exact path='/lex'>
           <Lex />
         </Route>
+
         <Route exact path='/pfa'>
           <Pfa />
         </Route>
+
         <Route path='*'>
           <Error />
         </Route>
@@ -46,4 +48,5 @@ const App = () => {
     </Router>
   )
 }
+
 export default App
