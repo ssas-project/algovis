@@ -2,6 +2,9 @@
 
 ## This project was made with Create React App and P5.js
 
+## If you are referencing this project dont forget to Star and Fork the project and Dont forget to credit "TEAM SASS" 
+
+### `this project was made as fulfilment for Minor Project in Bachelor of Engineering - Computer by TEAM SASS of Purwanchal Campus 2074 Batch including us (Abdullah Waqar, Sandesh Chudal, Sarthak Parajuli, Srijan Chaudhary)`
 
 ## Available Scripts
 
